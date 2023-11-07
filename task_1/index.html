@@ -3,11 +3,455 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/icons/favIcon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="utils.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Tourist Tales : Travel website Landing page</title>
   </head>
   <body>
-    hi
+    <section id="nav__mobile" class="nav_mobile">
+      <div class="close"><span id="close_Btn"><i class="fa-solid fa-xmark"></i></span></div>
+      <ul class="nav__mobile_links">
+        <li class="link-anime"><a href="#home">Home</a></li>
+        <li class="link-anime"><a href="#about">About Us</a></li>
+        <li class="link-anime"><a href="#discover">Discover</a></li>
+        <li class="link-anime"><a href="#blog">Blog</a></li>
+        <li class="link-anime"><a href="#journals">Journals</a></li>
+        <li class="link-anime"><a href="#gallery">Gallery</a></li>
+        <li class="link-anime"><a href="#contact">Contact</a></li>
+      </ul>
+    </section>
+    <header id="home">
+      <nav id="navbar">
+        <div class="navbar__logo link-anime">
+          <a href="#">Tourist Tales</a>
+        </div>
+        <ul class="navbar_links_container">
+          <li class="link-anime link_nav"><a href="#home">Home</a></li>
+          <li class="link-anime link_nav"><a href="#about">About Us</a></li>
+          <li class="link-anime link_nav"><a href="#discover">Discover</a></li>
+          <li class="link-anime link_nav"><a href="#blog">Blog</a></li>
+          <li class="link-anime link_nav"><a href="#journals">Journals</a></li>
+          <li class="link-anime link_nav"><a href="#gallery">Gallery</a></li>
+          <li class="link-anime link_nav"><a href="#contact">Contact</a></li>
+          <li class="link-anime search">
+            <a href="#navbar"><i class="fa-solid fa-magnifying-glass"></i></a>
+          </li>
+          <li class="link-anime menu" id="nav_menu">
+            <i class="fa-solid fa-bars"></i>
+          </li>
+        </ul>
+      </nav>
+      <div class="page__section header__container">
+        <h1>The new way to plan your next adventure</h1>
+        <h4>Explore the colorful world.</h4>
+        <button class="btn">
+          <span></span>Explore more <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </header>
+    <section class="about" id="about">
+      <div class="page__section about__container">
+        <div class="about__content">
+          <h2 class="section__header">About us</h2>
+          <p class="section__subheader">
+            Our mission is to ignite the spirit of discovery in every traveler's
+            heart, offering meticulously crafted itineraries that blend
+            adrenaline-pumping activities with awe-inspiring landscapes. With a
+            team of seasoned globetrotters, we ensure that every expedition is
+            infused with excitement, grace our planet. Embark on a voyage of a
+            lifetime with us, as we redefine the art of exploration.
+          </p>
+          <div class="about__flexContainer">
+            <div class="about__card">
+              <h4>250+</h4>
+              <p>Completed Trips</p>
+            </div>
+            <div class="about__card">
+              <h4>176</h4>
+              <p>Tour Guides</p>
+            </div>
+            <div class="about__card">
+              <h4>153</h4>
+              <p>Destinations</p>
+            </div>
+          </div>
+          <button class="btn">
+            <span></span>Read More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="about__image">
+          <img src="assets/images/about.jpg" alt="about image" />
+        </div>
+      </div>
+    </section>
+    <section id="discover" class="discover">
+      <div class="dicover__container page__section">
+        <h2 class="section__header">Discover the most engaging places</h2>
+        <p class="section__subheader">
+          Let's see the world with us , with you and your family.
+        </p>
+        <div class="discover__grid">
+          <div class="discover__card">
+            <div class="discover__card_image">
+              <img src="./assets/images/discover_1.jpg" alt="discover image" />
+            </div>
+            <div class="discover__card_content">
+              <h4>Norway</h4>
+              <p>
+                Discover the untamed beauty of Norway, a land where rugged
+                mountains, and enchanting northern lights paint a surreal
+                backdrop.
+              </p>
+              <button class="btn discover__card_button">
+                <span></span>Discover More
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="discover__card">
+            <div class="discover__card_image">
+              <img src="./assets/images/discover_2.jpg" alt="discover image" />
+            </div>
+            <div class="discover__card_content">
+              <h4>India</h4>
+              <p>
+                Discover the infinite beauty of India, a country with diverese
+                heritage , mystical tempals and historic forts of great
+                Kingdoms. The food will not disappoint.
+              </p>
+              <button class="btn discover__card_button">
+                <span></span>Discover More
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="discover__card">
+            <div class="discover__card_image">
+              <img src="./assets/images/discover_3.jpg" alt="discover image" />
+            </div>
+            <div class="discover__card_content">
+              <h4>Japan</h4>
+              <p>
+                From scaling the iconic peaks of Mount Fuji to immersing in the
+                serenity, Japan offers adventurers a captivating cultural
+                treasures.
+              </p>
+              <button class="btn discover__card_button">
+                <span></span>Discover More
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog" class="blogs">
+      <div class="blogs__container">
+        <h2 class="section__header">Latest on the blogs</h2>
+        <p class="section__subheader">
+          Read these interesting blogs, and decide the best place to travel for
+          you!.
+        </p>
+        <div class="blogs__grid">
+          <div class="blogs__card">
+            <img src="./assets/images/blog-1.jpg" alt="blogs_img" />
+            <div class="blogs__card_content">
+              10 mistakes every first time traveller will make and how to avoid
+              them!
+            </div>
+          </div>
+
+          <div class="blogs__card">
+            <img src="./assets/images/blog-2.jpg" alt="blogs_img" />
+            <div class="blogs__card_content">
+              What's it really like to move to a country where you don't speak
+              the language?
+            </div>
+          </div>
+
+          <div class="blogs__card">
+            <img src="./assets/images/blog-3.jpg" alt="blogs_img" />
+            <div class="blogs__card_content">
+              Exploring the quite corners of Oslo | Gallop around the globe.
+            </div>
+          </div>
+
+          <div class="blogs__card">
+            <img src="./assets/images/blog-4.jpg" alt="blogs_img" />
+            <div class="blogs__card_content">
+              11 things to know before you visit rainbow mountain in Peru.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="journals" id="journals">
+      <div class="page__section journals__container">
+        <h2 class="section__header">The Travel Journals</h2>
+        <p class="section__subheader">
+          A journal is a place to record new things you have discovered while
+          exploring various places you visit.
+        </p>
+        <div class="journals__grid">
+          <div class="journals__card">
+            <img
+              src="./assets/images/journals-1.jpg"
+              alt="Journals Cover Image"
+            />
+            <div class="journals__card_content">
+              <div class="journals__card_author">
+                <img src="./assets/images/author-1.jpg" alt="Journal Author" />
+                <p>By Marry Ann</p>
+              </div>
+              <h4>How to use less plastic when you travel.</h4>
+              <div class="journals__card_footer">
+                <p>18 Apr 2022</p>
+                <span class="link-anime"
+                  ><a href="#"><i class="fa-solid fa-share-nodes"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journals__card">
+            <img
+              src="./assets/images/journals-2.jpg"
+              alt="Journals Cover Image"
+            />
+            <div class="journals__card_content">
+              <div class="journals__card_author">
+                <img src="./assets/images/author-2.jpg" alt="Journal Author" />
+                <p>By Austin Martin</p>
+              </div>
+              <h4>The best weekend road trips from Denver.</h4>
+              <div class="journals__card_footer">
+                <p>22 Jun 2022</p>
+                <span class="link-anime"
+                  ><a href="#"><i class="fa-solid fa-share-nodes"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journals__card">
+            <img
+              src="./assets/images/journals-3.jpg"
+              alt="Journals Cover Image"
+            />
+            <div class="journals__card_content">
+              <div class="journals__card_author">
+                <img src="./assets/images/author-3.jpg" alt="Journal Author" />
+                <p>By Anina Joseph</p>
+              </div>
+              <h4>Tips and tricks to plan your next adventure.</h4>
+              <div class="journals__card_footer">
+                <p>05 Sep 2022</p>
+                <span class="link-anime"
+                  ><a href="#"><i class="fa-solid fa-share-nodes"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journals__card">
+            <img
+              src="./assets/images/journals-4.jpg"
+              alt="Journals Cover Image"
+            />
+            <div class="journals__card_content">
+              <div class="journals__card_author">
+                <img src="./assets/images/author-4.jpg" alt="Journal Author" />
+                <p>By Jacob Fernandez</p>
+              </div>
+              <h4>A beginner's guide to hostel's.</h4>
+              <div class="journals__card_footer">
+                <p>14 Dec 2022</p>
+                <span class="link-anime"
+                  ><a href="#"><i class="fa-solid fa-share-nodes"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journals__card">
+            <img
+              src="./assets/images/journals-5.jpg"
+              alt="Journals Cover Image"
+            />
+            <div class="journals__card_content">
+              <div class="journals__card_author">
+                <img src="./assets/images/author-5.jpg" alt="Journal Author" />
+                <p>By John Smith</p>
+              </div>
+              <h4>17 unconventional travel hacks you need.</h4>
+              <div class="journals__card_footer">
+                <p>10 Feb 2022</p>
+                <span class="link-anime"
+                  ><a href="#"><i class="fa-solid fa-share-nodes"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="journals__card">
+            <img
+              src="./assets/images/journals-6.jpg"
+              alt="Journals Cover Image"
+            />
+            <div class="journals__card_content">
+              <div class="journals__card_author">
+                <img src="./assets/images/author-6.jpg" alt="Journal Author" />
+                <p>By Aaran Kennedy</p>
+              </div>
+              <h4>Travel tip's you'll wish you'd known sooner.</h4>
+              <div class="journals__card_footer">
+                <p>20 Mar 2023</p>
+                <span class="link-anime"
+                  ><a href="#"><i class="fa-solid fa-share-nodes"></i></a
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="journals_btn">
+          <button class="btn">
+            <span></span>View All Journals
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="hero" id="hero">
+      <div class="page__section hero__container">
+        <p>Tourist Tales!</p>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="gallery__container">
+        <h2 class="section__header">Gallery Photos</h2>
+        <p class="section__subheader">
+          Explore the most beautiful places in the world.
+        </p>
+        <div class="gallery_grid">
+          <div class="gallery__card">
+            <img src="./assets/images/gallery-1.jpg" alt="gallery images" />
+            <div class="gallery__card_content">
+              <h4>Northern Lights</h4>
+              <p>Norway</p>
+            </div>
+          </div>
+
+          <div class="gallery__card">
+            <img src="./assets/images/gallery-2.jpg" alt="gallery images" />
+            <div class="gallery__card_content">
+              <h4>Krabi</h4>
+              <p>Thailand</p>
+            </div>
+          </div>
+
+          <div class="gallery__card">
+            <img src="./assets/images/gallery-3.jpg" alt="gallery images" />
+            <div class="gallery__card_content">
+              <h4>Bali</h4>
+              <p>Indonesia</p>
+            </div>
+          </div>
+
+          <div class="gallery__card">
+            <img src="./assets/images/gallery-4.jpg" alt="gallery images" />
+            <div class="gallery__card_content">
+              <h4>Tokyo</h4>
+              <p>Japan</p>
+            </div>
+          </div>
+
+          <div class="gallery__card">
+            <img src="./assets/images/gallery-6.jpg" alt="gallery images" />
+            <div class="gallery__card_content">
+              <h4>Taj Mahal</h4>
+              <p>India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="page__section contact__container">
+        <div class="contact__col contact__col_mid">
+          <h4>Contact our Travel Trip-Advisor.</h4>
+          <p>We always aim to reply within 24 hours.</p>
+        </div>
+
+        <div class="contact__col">
+          <div class="contact__card">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <h4>Call Us</h4>
+            <h5>+91 9876543210</h5>
+            <p>We are online now</p>
+          </div>
+        </div>
+
+        <div class="contact__col">
+          <div class="contact__card">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <h5>Send us an enquiry</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="page__section footer__container">
+        <h4>Tourist Tales</h4>
+        <div class="footer__socials">
+          <span class="link-anime">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          </span>
+          <span class="link-anime">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </span>
+          <span class="link-anime">
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </span>
+          <span class="link-anime">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          </span>
+        </div>
+        <p>
+          Cheap Romantic Vacations. Many people feel that there is a limited
+          amount of abundance, wealth, or chance to succeed in life.
+        </p>
+        <ul class="footer__nav">
+          <li class="link-anime"><a href="#home">Home</a></li>
+          <li class="link-anime"><a href="#about">About Us</a></li>
+          <li class="link-anime"><a href="#discover">Discover</a></li>
+          <li class="link-anime"><a href="#blog">Blog</a></li>
+          <li class="link-anime"><a href="#journals">Journals</a></li>
+          <li class="link-anime"><a href="#gallery">Gallery</a></li>
+          <li class="link-anime"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!-- <hr> -->
+      <div class="footer__copyright">
+        Copyright © 2023 made by Yash Sharma. As part of Octanet Internship
+        (task-1).
+      </div>
+    </footer>
+    <script src="main.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
