@@ -16,10 +16,10 @@
   --header_font: "Maven Pro", sans-serif;
   --article_font: "Nunito", sans-serif;
 
-  --fs_normal: 1rem;
-  --fs_sm: 0.8rem;
-  --fs_md: 1.25rem;
-  --fs_lg: 1.4rem;
+  --fs_normal: 1.2rem;
+  --fs_sm: 1rem;
+  --fs_md: 1.4rem;
+  --fs_lg: 1.6rem;
   /* --primary_bg_gradient: linear-gradient(
     178.1deg,
     rgb(60, 55, 106) 8.5%,
@@ -74,10 +74,12 @@
   font-family: var(--article_font);
   font-size: var(--fs_normal);
 }
-
+#navbar{
+  margin-bottom: 0.25rem;
+}
 .content__container {
-  max-width: 400px;
-  max-height: 420px;
+  max-width: 430px;
+  max-height: 550px;
   width: 90%;
   height: 95%;
   margin: auto;
@@ -113,9 +115,9 @@
 .header_text {
   font-size: var(--fs_lg);
   font-family: var(--header_font);
-  margin-bottom: 0.25rem;
-  text-align: center;
   font-weight: 600;
+  margin-bottom : 0.25rem;
+  text-align: center;
   /* opacity: 1; */
 }
 
@@ -126,6 +128,7 @@
 }
 
 .subheader_text{
+  color: var(--primary_clr);
   font-size: var(--fs_md);
   font-family: var(--article_font);
   font-weight: 700;
@@ -148,6 +151,24 @@
   color: var(--primary_clr);
   text-shadow: 3px 0px 5px rgba(0, 0, 0, 0.59);
 }
+
+#user_name{
+  border: none;
+  outline: none;
+  background: transparent;
+  width: fit-content;
+  font-size: var(--fs_lg);
+  font-family: var(--header_font);
+  font-weight: 600;
+  color: var(--primary_clr);
+}
+
+#user_name::placeholder{
+  font-size: var(--fs_lg);
+  color: rgba(256, 256, 256, 0.7);
+
+}
+
 
 .createBtn {
   /* display: none; */
@@ -214,13 +235,42 @@
   margin-top: 4px;
 }
 
-.task__card>div{
+.task__card>div:first-child{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.task__card>div:last-child{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 4px;
   margin-left: 0.5rem;
+}
+
+.task__creation_time{
+  text-align: right;
+  font-style: italic;
+  font-size: var(--fs_md);
+  font-weight: 700;
+  text-shadow: 3px 0px 5px rgba(0, 0, 0, 0.59);
+  color: var(--secondary_clr);
+}
+
+.task_details{
+  width: 100%;
+  background: transparent;
+  /* appearance: none; */
+  resize: vertical;
+  outline: none;
+  border: none;
+}
+
+.task_details:not([readonly]){
+  color: var(--secondary_clr);
 }
 
 .task__card .btn{

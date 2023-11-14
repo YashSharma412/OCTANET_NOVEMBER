@@ -12,22 +12,28 @@
 <body id="body">
     <nav id="navbar">
         <h1 class="header_text disp_flex_bet">
-            Welcome back!
+            <span>Welcome, <input type="text" name="name" id="user_name"  placeholder="(Your Name)"></span>
             <span id="todays_date"></span>
         </h1>
     </nav>
     <main id="main">
         <section id="todo__container" class="content__container">
-            <h1 class="header_text content__container_heading">Tasks List</h1>
+            <h1 class="header_text content__container_heading">To-do Tasks</h1>
             <button class="createBtn btn"> + Create task</button>
             <div class="taskInitiate__card disp_none">
-                <textarea class="taskInitiate__card-text" placeholder="What needs to be done?" ></textarea>
+                <textarea 
+                class="taskInitiate__card-text" 
+                placeholder="What needs to be done?" 
+                ></textarea>
                 <button class="taskInitiate__addBtn btn">Add</button>
             </div>
-            <div class="task__card_container">
+            <div class="task__card_container" id="todo__tasks_list">
                 <!-- <div class="task__card">
                     <input type="checkbox" name="completed" class="task__completed-check">
-                    <p class="subheader_text">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div>
+                        <div class="task__creation_time">12 : 20</div>
+                        <textarea readonly class="subheader_text task_details">Lorem ipsum dolor sit amet consectetur.</textarea>
+                    </div>
                     <div>
                         <button onclick="editCard(this)" class="btn"><i class="fa-regular fa-trash-can"></i></button>
                         <button onclick="deleteCard(this)" class="btn"><i class="fa-regular fa-pen-to-square"></i></button>
@@ -40,10 +46,14 @@
             <h1 class="header_text content__container_heading">Tasks Completed</h1>
             <button class="createBtn btn"> + Create task</button>
             <div class="taskInitiate__card disp_none">
-                <textarea class="taskInitiate__card-text" placeholder="What needs to be done?" ></textarea>
+                <textarea  
+                class="taskInitiate__card-text" 
+                placeholder="What needs to be done?" 
+                ></textarea>
                 <button class="taskInitiate__addBtn btn">Add</button>
             </div>
-            <div class="task__card_container"></div>
+            <div class="task__card_container" id="completed__tasks_list">
+            </div>
         </section>
     </main>
 
